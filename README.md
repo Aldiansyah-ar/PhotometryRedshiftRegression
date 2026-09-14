@@ -10,7 +10,7 @@
 
 ## Stack
 
-* Python (Scikitlearn, PyTorch)
+Python (Scikitlearn, PyTorch)
 
 ## Methods
 
