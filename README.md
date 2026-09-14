@@ -1,10 +1,18 @@
-## Project Details: 
-1. Team Members:
-Aldiansyah Anugrah Ramadhan, Gia Muhammad Agusta, Giovaldi Ramadhan,  Muhammad Rizaldi Yani H.
+# Photometric Redshift Estimation Using Regression
 
-2. Data Source: SDSS Data Release 18
+<p style="text-align: justify">
+  Redshift estimation using spectroscopic methods is constrained by high time consumption and computational costs. To overcome these limitations, a regression approach was implemented utilizing Extra Trees Regressor, Random Forest, and CNN algorithms. To optimize model performance, hyperparameter tuning was conducted using a genetic algorithm and random search.
+</p>
 
-3. Method:
+## Data Collection
+
+* The SDSS data is gathered by SQL query on https://skyserver.sdss.org/dr18/SearchTools/sql
+
+## Stack
+
+* Python (Scikitlearn, PyTorch)
+
+## Methods
 
 ```mermaid
 graph TD;
@@ -15,7 +23,7 @@ graph TD;
 
     D --> F1[Extra Tree Regressor]
     D --> F2[Random Forest]
-    D --> F3[Deep Learning]
+    D --> F3[CNN]
 
     F1 --> G1["Evaluate (R2, MAE, MSE)"]
     F2 --> G2["Evaluate (R2, MAE, MSE)"]
@@ -30,20 +38,12 @@ graph TD;
     J --> K[Test Model]
     E --> K
 
-    K --> L[Output Model]
+    K --> L[Redshift]
     L --> M[End]
 ```
 
-Notes
-* Data Preprocessing (filtering zWarning = 0, excluding the 'Star' class, handling outliers, filtering color index, train test split)
-* Deep Learning (Deep Convolutional Neural Network)
-* Hyperparameter Tuning (Random Search and Genetic Algorithm)
-* Output Model (Redshift)
-
-4. ML Category: Supervised Learning (Regression) 
-
-5. Task Assignments: \\
-a. Medium Story: Rizaldi and Gia \\
-b. YouTube video: All members \\
-c. Git code: Aldi \\
-d. OSF Presentation slides: Giovaldi
+## Project Member
+- Aldiansyah Anugrah Ramadhan
+- Muhammad Rizaldi Yani Hidayatulloh
+- Gia Muhammad Agusta
+- Giovaldi Ramadhan
