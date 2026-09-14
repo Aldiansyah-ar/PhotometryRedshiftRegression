@@ -6,7 +6,7 @@
 
 ## Data Collection
 
-* The SDSS data is gathered by SQL query on https://skyserver.sdss.org/dr18/SearchTools/sql
+The SDSS data is gathered by SQL query on https://skyserver.sdss.org/dr18/SearchTools/sql
 
 ## Stack
 
